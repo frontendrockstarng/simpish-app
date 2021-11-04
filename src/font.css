@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Light.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-LightItalic.otf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Regular.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Italic.otf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Book.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-BookItalic.otf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Book500.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-MediumItalic.otf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Bold.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-BoldItalic.otf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-ExtraBold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-ExtraBoldItalic.otf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-Black.otf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Typold';
+  src: url('../fonts/typold/Typold-BlackItalic.otf') format('truetype');
+  font-weight: bolder;
+  font-style: italic;
+}

@@ -1,0 +1,135 @@
+/* preloader generating page */
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 10% 0 0 0; 
+    padding: 20px 40px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+  }
+
+  .preLoadPage{
+      width:80%;
+      padding-top: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+  }
+  
+  .Loading {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .Loading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    animation: load 5s forwards;
+  }
+  
+  @keyframes load {
+    0% {
+      width: 0;
+      background: #a28089;
+    }
+    
+    25% {
+      width: 40%;
+      background: #a0d2eb;
+    }
+    
+    50% {
+      width: 60%;
+      background: #ffa8b6;
+    }
+    
+    75% {
+      width: 75%;
+      background: #d0bdf4;
+    }
+    
+    100% {
+      width: 100%;
+      background: #494d5f;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      background: #a28089;
+    }
+    
+    25% {
+      background: #a0d2eb;
+    }
+    
+    50% {
+      background: #ffa8b6;
+    }
+    
+    75% {
+      background: #d0bdf4;
+    }
+    
+    100% {
+      background: #494d5f;
+    }
+  }
+
+  #loadText{
+    font-family: 'Typold Regular', sans-serif;
+    margin-top: 6%;
+    color: rgb(69, 42, 152);
+    font-size: 4rem;
+}
+
+.loadedImageDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.generatedCodeDiv{
+    transition: all ease-in .5s;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    font-family: 'Typold Regular', sans-serif;
+   justify-content: center;
+    text-align: center;
+}
+
+.copyCode{
+    border: none;
+    background-color: white;
+    color: rgb(69, 42, 152);
+}
+
+.generatedCode{
+    color: #452a98;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+.copyCode{
+    cursor: pointer;
+    padding: 0 3% 0 3%;
+    margin: 0 3% 0 3%;
+}

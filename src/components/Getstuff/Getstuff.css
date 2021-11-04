@@ -1,0 +1,122 @@
+
+
+.getStuffDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Typold Regular', sans-serif;
+    padding-top: 10%;
+}
+
+.getstuffContent h2{
+    color:rgb(69, 42, 152);
+}
+.goldColor{
+    color: #FFCB22;
+}
+
+.searchBarDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.searchBarContainer{
+    width: 90%;
+    display: flex;
+    margin-top: 20%;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0 0 0 7%;
+    margin-bottom: 2%;
+}
+
+.searchBarContainer:hover{
+    transition: background-color ease-in-out 0.3s;
+    background-color: rgba(100, 96, 158, 0.24);
+}
+
+.searchBarContainer:focus-within{
+    transition: background-color ease-in 0.3s;
+    background-color: rgba(243, 243, 243, 0.24);
+}
+.searchForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+.mainSearchBar{
+    width: 80%;
+    line-height: 3rem;
+    border: none;
+    outline-style: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+}
+
+.btnSearch{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(69, 42, 152);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.btnSearch:hover{
+    transition: background-color ease-in 0.2s;
+    transition: color ease-in-out 0.24s;
+    background-color: #FFCB22;
+    color: #452a98;
+}
+
+.redHint{
+    width: 90%;
+    color: #f54343;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .mainSearchBar{
+        font-size: 0.9rem;
+    }
+    .searchBarContainer{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+    .mainSearchBar{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 801px) {
+  .getStuffDiv{
+      padding-top: 0;
+  }
+  
+  .searchBarContainer{
+    width: 95%;
+    margin-left: 2%;
+}
+
+.searchBarDiv{
+    width: 100%;
+}
+
+.mainSearchBar{
+    font-size: 0.8rem;
+}
+
+
+
+}
