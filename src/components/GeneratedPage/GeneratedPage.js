@@ -22,9 +22,10 @@ export default function GeneratedPage(){
                 :
                 <div className="preLoadPage">
                     <div className="loadedImageDiv">
-                        <img src={UploadedResultImage} className="loadedImage"/>
+                        <img src={UploadedResultImage} className="loadedImage" alt="successful"/>
                     </div>
                     <GeneratedCode />
+                   
                 </div>
             }
         </div>

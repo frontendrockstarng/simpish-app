@@ -1,16 +1,35 @@
-
+.containGetStuffDiv{
+    width:100%;
+}
 
 .getStuffDiv{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family:'Typold Regular', sans-serif;
-    padding-top: 10%;
+    padding-top: 0%;
+
+}
+
+.searchAgain{
+    margin-top: 4%;
+}
+
+.searchAgain button{
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    background-color: #452a98;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .getstuffContent h2{
     color:rgb(69, 42, 152);
+    text-align: center;
 }
 .goldColor{
     color: #FFCB22;
@@ -21,13 +40,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 
 .searchBarContainer{
-    width: 90%;
+    width: 75%;
     display: flex;
-    margin-top: 20%;
     border: 1px solid #ccc;
     border-radius: 50px;
     justify-content: space-between;
@@ -44,22 +62,38 @@
     transition: background-color ease-in 0.3s;
     background-color: rgba(243, 243, 243, 0.24);
 }
+.searchImgDiv{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchImgDiv img{
+    width: 60%;
+}
+
+
 .searchForm{
     width: 100%;
     display: flex;
     align-items: center;
-   
+   justify-content: center;
+   margin-top: 2%;
+   padding-top: 0;
 }
 .mainSearchBar{
     width: 80%;
     line-height: 3rem;
     border: none;
     outline-style: none;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     background-color: transparent;
 }
 
-.btnSearch{
+.btnSearch, .btnSearch:disabled{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -71,6 +105,19 @@
     text-align: center;
 }
 
+.btnSearch:disabled{
+    cursor: not-allowed;
+    background-color:rgb(184, 184, 184);
+}
+
+.btnSearch:disabled:hover{
+    transition: background-color ease-in 0.2s;
+    transition: color ease-in-out 0.24s;
+    background-color:rgb(129, 129, 129);
+    color: #afafaf;
+}
+
+
 .btnSearch:hover{
     transition: background-color ease-in 0.2s;
     transition: color ease-in-out 0.24s;
@@ -79,8 +126,54 @@
 }
 
 .redHint{
-    width: 90%;
+    width: 60%;
     color: #f54343;
+}
+
+.downloadFilePage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloadBtnDiv{
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+#downlaodBtn{
+    background-color: #f7f7f7;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    color: #1a1a1a;
+}
+
+.fileDetail{
+    margin-bottom: 1%;
+}
+.getStuffImageDiv{
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getStuffImageDiv img{
+    width: 70%;
+}
+
+@media only screen and (max-width: 399px) and (min-width: 280px) {
+    .getstuffContent h2{
+        font-size: 1.6rem;
+    }
+
+    .searchBarContainer{
+        width: 95%;
+    }
+
+    .mainSearchBar{
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
@@ -91,18 +184,41 @@
         width: 100%;
     }
 
+    .searchImgDiv img{
+        width: 50%;
+    }
+    
+    .getStuffImageDiv img{
+        margin-top: 15%;
+        width: 60%;
+    }
+    .searchAgain button{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 800px) and (min-width: 601px) {
     .mainSearchBar{
         font-size: 0.8rem;
     }
+
+    .searchImgDiv img{
+        width: 60%;
+    }
+    
 }
 
 @media only screen and (max-width: 960px) and (min-width: 801px) {
   .getStuffDiv{
       padding-top: 0;
   }
+
+  .searchImgDiv img{
+    width: 60%;
+}
+
   
   .searchBarContainer{
     width: 95%;

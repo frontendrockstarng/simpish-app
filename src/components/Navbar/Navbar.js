@@ -12,7 +12,7 @@ class Navbar extends Component{
         return (
             <div>
                 <div className="navBar">
-                    <Link to='/' className='logo'><img src='https://res.cloudinary.com/colt-copy/image/upload/v1632609221/Habari_Logo_szlveh.svg'/></Link>
+                    <Link to='/' className='logo'><img src='https://res.cloudinary.com/colt-copy/image/upload/v1632609221/Habari_Logo_szlveh.svg' alt="logo"/></Link>
                     <nav className="menuLinks">
                         <div className="logoDiv" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}> </i>

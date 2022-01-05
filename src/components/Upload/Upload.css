@@ -25,7 +25,10 @@
     align-items: center;
 }
 
+
+
 .mainUploadDiv.second{
+
     background-image: url('https://res.cloudinary.com/colt-copy/image/upload/v1632919317/abstract_1_1_kfinow.png');
     background-color: hsla(0, 0%, 100%, 0.068);
 }
@@ -117,20 +120,104 @@
 
 /* Media queries */
 
-@media only screen and (max-width: 600px) and (min-width: 400px) {
-	.uploadSection{
+@media only screen and (max-width: 399px) and (min-width: 280px) {
+    .uploadSection{
+        height: 100%!important;
         flex-direction: column;
     }
     .mainUploadDiv{
         width: 100%;
         text-align: center;
-        padding-bottom: 8%;
+        padding-bottom: 25%;
+        height: 100%;
+    }
+
+    .uploadFilePresent{
+        font-size: 0.8rem;
+        color: rgb(34, 41, 56);
+        width: 70%;
+    }
+
+    .uploadDetails{
+        font-size: 0.7rem;
+        color: rgb(31, 31, 31);
+    }
+
+    .uploadFilePresent label{
+        margin-bottom:2% ;
     }
     
-
+    .infoNote{
+        font-size: 0.7rem;
+    }
     .mainContent h2{
        font-size: 1.8rem;
-       margin-top: 15%;
+       margin-top: 2%;
+    }
+
+    .btnGenerateDiv{
+        margin-top: 5%;
+    }
+
+    .btnLabel{
+        width: 50%;
+    }
+
+    .uploadIconDiv{
+        margin-top: 5%;
+        padding-top: 2%;
+    }
+
+    .btnGenerate{
+        width: 60%;
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+
+    .uploadIcon{
+        margin-top: 5%;
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+	.uploadSection{
+        height: 100%!important;
+        flex-direction: column;
+    }
+    .mainUploadDiv{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 25%;
+        height: 100%;
+    }
+
+    .uploadFilePresent{
+        font-size: 0.8rem;
+        color: rgb(34, 41, 56);
+        width: 70%;
+    }
+
+    .uploadDetails{
+        font-size: 0.7rem;
+        color: rgb(31, 31, 31);
+    }
+
+    .uploadFilePresent label{
+        margin-bottom:2% ;
+    }
+    
+    .infoNote{
+        font-size: 0.7rem;
+    }
+    .mainContent h2{
+       font-size: 1.8rem;
+       margin-top: 2%;
+    }
+
+    .btnGenerateDiv{
+        margin-top: 5%;
     }
 
     .btnLabel{
@@ -138,11 +225,19 @@
     }
 
     .uploadIconDiv{
-        margin-top: 15%;
+        margin-top: 5%;
+        padding-top: 2%;
     }
 
     .btnGenerate{
-        width: 60%;
+        width: 40%;
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+
+    .uploadIcon{
+        margin-top: 5%;
+        width: 50%;
     }
 
 }
@@ -158,14 +253,34 @@
         height: auto;
     }
     
-
+    .mainContent{
+        padding-top: 8%;
+    }
     .mainContent h2{
        font-size: 2.1rem;
-       margin-top: 15%;
+       margin-top: 5%;
     }
 
     .btnGenerate{
         width: 60%;
+    }
+    
+    .uploadFilePresent{
+        width: 75%;
+    }
+
+    .uploadIconDiv{
+        margin-top: 10%;
+    }
+    .btnGenerateDiv{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    .uploadAgain{
+        position: relative;
+        left: 25%;
     }
 
 }

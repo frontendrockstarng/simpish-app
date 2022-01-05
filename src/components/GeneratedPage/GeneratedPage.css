@@ -42,6 +42,28 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     animation: load 5s forwards;
   }
+
+  .uploadAgain{
+    margin-top: 0%;
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+  }
+
+  .uploadAgain button{
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    background-color: #452a98;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .uploadAgain button:hover{
+    transition: background-color ease-in 0.3s;
+    background-color: #401ab3;
+  }
   
   @keyframes load {
     0% {
@@ -132,4 +154,68 @@
     cursor: pointer;
     padding: 0 3% 0 3%;
     margin: 0 3% 0 3%;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  #loadText{
+    font-size: 2rem;
+  }
+  .uploadAgain{
+    position: relative;
+    width: 50%;
+    top: -70px;
+    bottom: 0;
+    left: 25%;
+  }
+  .loadedImageDiv img{
+    width: 60%;
+  }
+  .loadedImageDiv{
+    margin-top: 10%;
+  }
+.preLoadPage{
+  padding-top: 10%;
+}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+  .preLoadPage{
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  .uploadAgain {
+    position: relative;
+    bottom: 15%;
+    width: 40%;
+    left:30%;
+  }
+
+
+}
+
+@media only screen and (max-width: 399px) and (min-width: 280px) {
+  #loadText{
+    font-size: 1.7rem;
+  }
+
+  .preLoadPage{
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  .uploadAgain {
+    position: relative;
+    bottom: 20%;
+    width: 40%;
+    left:30%;
+  }
+
+  .loadedImageDiv{
+    margin-top: 15%;
+  }
+
+  .loadedImageDiv img{
+    width: 55%;
+  }
 }

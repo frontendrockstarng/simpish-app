@@ -14,12 +14,15 @@ export default function Upload(){
             setPage((page)=> page + 1);
             console.log("worked")
         }
+        function goFirstPage(){
+            setPage((page) => page - 1);
+        }
        
         return(
             <div className="uploadSection">
                 
                 {page === 1 && <UploadingOne  goNextPage = {goNextPage}/>}
-                {page === 2 && <UploadingTwo />}
+                {page === 2 && <UploadingTwo goFirstPage = {goFirstPage}/>}
                 
                 <div className="mainUploadDiv second">
                      <Getstuff />
@@ -98,8 +101,12 @@ export default function Upload(){
     )
   }
 
-  function UploadingTwo(){
+  function UploadingTwo(props){
      return(
-      <GeneratedPage />
+         <>
+         <GeneratedPage />
+         <div className="uploadAgain first"><button onClick={props.goFirstPage}>Upload Again</button></div>
+         </>
+  
      )
   }

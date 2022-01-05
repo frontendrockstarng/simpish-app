@@ -8,3 +8,9 @@
   height:100vh;
   background-color: #fdfdfd;
 }
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  .App{
+    height: 100%;
+  }
+}
